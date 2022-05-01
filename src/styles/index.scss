@@ -1,0 +1,39 @@
+noscript {
+    background: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    p {
+        text-align: center;
+    }
+}
+
+body {
+    background: #35363A;
+    color: rgb(255, 248, 248);
+    margin: 0;
+
+    .input-required::after {
+      color: red;
+      content: '  *';
+      font-weight: bold;
+    }
+    
+    .results {
+      padding-top: 30px;
+    }
+    
+    .copy-to-clipboard {
+      color: rgb(245, 211, 62);
+      font-weight: 500;
+      text-decoration: underline;
+    
+      margin-right: 5px;
+      cursor: pointer;  
+    }
+
+    #tandc {
+      font-size: 12px;
+    }
+}
