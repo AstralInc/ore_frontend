@@ -45,7 +45,7 @@ class App extends React.Component {
     });
 
     if (response.ok) {
-      this.setState({buyBackVal: await response.text()})
+      this.setState({buyBackVal: await response.json()})
     }
     else
     {
